@@ -11,10 +11,10 @@
 }
 
 .img-logo {
-    margin: auto;
+    margin-left: 2em;
     margin-top: 0;
     padding: 0;
-    max-width: 300px;
+    max-width: 20%;
     height:auto;
 }
 
@@ -35,8 +35,37 @@
 /* Main Section */
 
 
+.mainSection {
+    margin-top: 4em;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 7em 0 1em 0;
+}
+
+.myPresentation {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentationPicture {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
 #mainPicture {
-    max-width: 90%;
+    max-width: 50%;
     margin: 0;
     padding: 0;
     -webkit-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
@@ -46,15 +75,61 @@
 
 .main h3 {
     font-size: 2.4em;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .main h6 {
     font-size: 1em;
     line-height: 1;
-    border-bottom: 3px solid rgb(219, 163, 148);
-    width: 50%;
+    border-bottom: 3px solid rgb(204, 84, 52);
+    width: 40%;
+    margin: 1em;
 }
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainButtons {
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    width: 8em;
+    height: 3em;
+    margin: 1em;
+    border: 2px solid rgb(204, 84, 52);
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#work {
+    background-color: rgb(204, 84, 52);
+    color: white;
+}
+
+#work:hover {
+    background-color: rgb(153, 63, 38);
+    border: rgb(153, 63, 38);
+    color: white;
+}
+
+
+#hire {
+    background-color: white;
+    color: rgb(204, 84, 52);
+}
+
+#hire:hover {
+    background-color: rgb(204, 84, 52);
+    border: rgb(204, 84, 52);
+    color: white;
+}
+
 
 /* Services Section */
 
@@ -94,7 +169,7 @@
 }
 
 .card:hover .circle {
-    background-color: rgb(219, 163, 148);
+    background-color:rgb(204, 84, 52);
     color: white;
     transition: 0.5s;
 }
@@ -121,7 +196,7 @@
     padding: 20px 0;
     margin-top: 10px;
     box-sizing: border-box;
-    background-color: rgb(219, 163, 148);
+    background-color: rgb(204, 84, 52);
 }
 
 /*rgb(204, 84, 52);*/
