@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+#topnavbox {
+    -webkit-box-shadow: 0px 7px 49px -34px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 49px -34px rgba(0,0,0,0.75);
+    box-shadow: 0px 7px 49px -34px rgba(0,0,0,0.75);
+}
+
+.img-logo {
+    margin: auto;
+    margin-top: 0;
+    padding: 0;
+    max-width: 300px;
+    height:auto;
+}
+
+.nav-link {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold; 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    background-color: rgb(219, 163, 148);
+    border-radius: 0.2em;
+}
+
+/* Main Section */
+
+
+#mainPicture {
+    max-width: 90%;
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
+}
+
+.main h3 {
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+.main h6 {
+    font-size: 1em;
+    line-height: 1;
+    border-bottom: 3px solid rgb(219, 163, 148);
+    width: 50%;
+}
+
+/* Services Section */
+
+.services h1 {
+    text-align: center;
+}
+
+.card {
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 5%;
+    -webkit-box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+    box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+}
+
+.card h4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.card p {
+    color: gray;
+}
+
+.circle {
+    height: 70px;
+    width: 70px;
+    background-color: lightgrey;
+    color: black;
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.card:hover .circle {
+    background-color: rgb(219, 163, 148);
+    color: white;
+    transition: 0.5s;
+}
+
+
+/* Book Now Section */
+
+
+
+
+/* About Section */
+
+
+
+/* Contact Section */
+
+
+/* From this we have the footer */
+
+.home-footer {
+    width: 100%;
+    display: block;
+    overflow: hidden;  
+    padding: 20px 0;
+    margin-top: 10px;
+    box-sizing: border-box;
+    background-color: rgb(219, 163, 148);
+}
+
+/*rgb(204, 84, 52);*/
+
+.inner_footer {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+
+}
+
+.inner_footer .logo_container {
+    width: 30%;
+    float: left;
+    height: 100%;
+    display: block;
+}
+
+.inner_footer .logo_container img {
+    width: 150px;
+    height: auto;
+}
+
+.inner_footer .footer_third {
+    width: calc(21.6666666667% - 20px);
+    margin-right: 20px;
+    float: left;
+    height: 100%;
+}
+
+.inner_footer .footer_third:last-child {
+    margin-right: 0;
+}
+
+.inner_footer .footer_third h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.inner_footer .footer_third a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.inner_footer .footer_third li {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 24px;
+}
+
+.inner_footer .footer_third span {
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+}
+
+@media(max-width: 800px) {
+    .footer .inner_footer{
+        width: 90%;
+    }
+
+    .inner_footer .logo_container,
+    .inner_footer .footer_third{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
