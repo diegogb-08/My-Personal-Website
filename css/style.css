@@ -489,6 +489,10 @@ body {
         justify-content: center;
         align-items: center;
     }
+
+    .contactSection {
+        margin: 1rem;
+    }
 }
 
 
