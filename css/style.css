@@ -164,6 +164,7 @@ body {
 
 .myPresentation h6 {
     font-size: 1em;
+    font-weight: lighter;
     line-height: 1;
     border-bottom: 3px solid rgb(204, 84, 52);
     width: 45%;
@@ -225,6 +226,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 0;
     }
     .presentationPicture {
         margin-top: 3em;
@@ -264,6 +266,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .container {
@@ -330,17 +333,102 @@ body {
 
 @media (max-width:800px) {
 
+    #work {
+        margin-top: 3rem;
+    }
+
     .myWork h1 {
         text-align: center;
         margin-top: 1em;
     }
-    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 1em;
+        justify-content: space-between;
+    }    
+
 }
 
+@media (max-width:600px) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 1em;
+        justify-content: space-between;
+    }    
+
+}
 
 
 /* About Section */
 
+#about {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 4rem 2rem 4rem;
+}
+
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textAbout {
+    margin: 2rem;
+    text-align: justify;
+}
+
+.imgAbout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+}
+
+.imgAbout img {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+/* About Media Query */
+
+@media (max-width:800px) {
+
+    .imgAbout {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
+
+    .imgAbout {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .bottomImg {
+        display: none;
+    }
+}
 
 
 /* Contact Section */
