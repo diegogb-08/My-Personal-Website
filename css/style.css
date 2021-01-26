@@ -42,12 +42,10 @@
 
 #mainPicture {
     max-width: 40%;
-    margin: 0;
+    margin: 0 0 0 3em;
     padding: 0;
     box-shadow: 10px 10px 46px -16px rgba(0,0,0,0.75);
 }
-
-
 
 .myPresentation {
     width: 100%;
@@ -249,7 +247,44 @@
     padding-top: 20px;
 }
 
-@media(max-width: 800px) {
+/* Media Queries */
+
+ 
+@media (max-width:800px) {
+    .mainSection {
+        margin-top: 5em;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .presentationPicture {
+        margin-top: 3em;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+   .myPresentation {
+        margin-top: 3em;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mainPicture {
+        max-width: 60%;
+        margin: 0;
+    }
+
     .footer .inner_footer{
         width: 90%;
     }
