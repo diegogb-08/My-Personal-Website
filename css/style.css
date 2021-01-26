@@ -1,22 +1,124 @@
-
-.nav-item {
-    margin-right: 2em;
-    margin-left: 2em;
+* {
+    box-sizing: border-box;
 }
 
-.nav-link {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1.5em;
-    color: black;
-    font-weight: bold; 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(248,249,250);
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 7px 49px -34px rgba(0,0,0,0.75);
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.navbar-links ul {
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+    border-radius: 0.5rem;
+}
+
+.navbar-links li a {
     text-decoration: none;
-    cursor: pointer;
+    color: grey;
+    padding: 1rem;
+    display: block;
 }
 
-.nav-link:hover {
+
+.navbar-links li:hover {
     background-color: rgb(204, 84, 52);
-    border-radius: 0.2em;
 }
+
+.navbar-links li a:hover {
+    color: white;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Navbar Media Queary */
+
+
+@media (max-width: 800px) {
+    .brand-title {
+        color: white;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+      display: none;
+      width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: rgb(204, 84, 52);
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+        color: white;
+    }
+
+    .navbar-links li a:hover {
+        background-color: rgb(212, 107, 78);
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
 
 /* Main Section */
 
@@ -89,8 +191,8 @@
 }
 
 #work:hover {
-    background-color: rgb(153, 63, 38);
-    border: rgb(153, 63, 38);
+    background-color: rgb(212, 107, 78);
+    border: rgb(212, 107, 78);
     color: white;
     cursor: pointer;
 }
@@ -108,22 +210,66 @@
     cursor: pointer;
 }
 
+/* Main Section Media Query */
+
+@media (max-width:800px) {
+    .mainSection {
+        margin-top: 5em;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .presentationPicture {
+        margin-top: 3em;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+   .myPresentation {
+        margin-top: 3em;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mainPicture {
+        max-width: 60%;
+        margin: 0;
+    }
+
+    .myWork h1 {
+        text-align: center;
+        margin-top: 1em;
+    }
+    
+    .footer .inner_footer{
+        width: 90%;
+    }
+}
 
 /* My Work Section */
 
 .myWork h1 {
     text-align: center;
-    margin-top: 2em;
+    margin: 2em 0 2em 0;
 }
 
 .card {
     border: none;
     outline: none;
     text-align: center;
-    border-radius: 5%;
-    -webkit-box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
-    -moz-box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
-    box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+    border-radius: 2em;
+    box-shadow: 10px 3px 35px -9px rgba(0,0,0,0.75);
 }
 
 .card h4 {
@@ -154,11 +300,6 @@
 }
 
 
-/* Book Now Section */
-
-
-
-
 /* About Section */
 
 
@@ -166,7 +307,7 @@
 /* Contact Section */
 
 
-/* From this we have the footer */
+/* Footer Section */
 
 .home-footer {
     width: 100%;
@@ -247,48 +388,10 @@
     padding-top: 20px;
 }
 
-/* Media Queries */
+/* Footer Media Query */
 
- 
+
 @media (max-width:800px) {
-    .mainSection {
-        margin-top: 5em;
-        max-width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .presentationPicture {
-        margin-top: 3em;
-        max-width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-   .myPresentation {
-        margin-top: 3em;
-        max-width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #mainPicture {
-        max-width: 60%;
-        margin: 0;
-    }
-
-    .footer .inner_footer{
-        width: 90%;
-    }
-
     .inner_footer .logo_container,
     .inner_footer .footer_third{
         width: 100%;

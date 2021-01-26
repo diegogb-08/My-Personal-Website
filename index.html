@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="my personal Website">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Personal Website</title>
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a href="#main" class="navbar-brand">Diego Garcia</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a class="nav-link" href="#main">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#myWork">My Work</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+
+    <!--Navbar Section-->
+
+    <nav class="navbar">
+        <div class="brand-title">Diego Garcia</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>  
-    </nav>
-    
+        </div>
+    </nav>    
 
     <!--Main Section-->
     <section class="main" id="main">
@@ -104,19 +106,28 @@
     <section class="about" id="about">
         <div class="">
             <div class="">
-
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ullam error, ad laboriosam quia molestiae, laborum fuga tempore tempora nesciunt soluta iure a sit? Tempora quae culpa sit mollitia inventore.
+            </div>
+            <div class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ullam error, ad laboriosam quia molestiae, laborum fuga tempore tempora nesciunt soluta iure a sit? Tempora quae culpa sit mollitia inventore.
             </div>
         </div>
-            
-
     </section>
 
     <!--Contact Section-->
 
     <section class="contact" id="contact">
-        <div class="">
-            <div class="">
-    
+        <div class="divContact">
+            <div class="circle">
+                <span><i class="fa fa-email"></i></span>
+                <p>d.garciabrisa</p>
+            </div>
+            <div class="circle">
+                <span><i class="fa fa-telephone"></i></span>
+                <p>+34 652 79 86 45</p>
+            </div>
+            <div class="circle">
+                <span><i class="fa fa-tree"></i></span>
             </div>
         </div>
                 
@@ -145,8 +156,7 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="js/main.js"></script>
 </body>
 </html>
