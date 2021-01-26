@@ -372,7 +372,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2rem 4rem 2rem 4rem;
+    margin: 2rem 8rem 2rem 8rem;
 }
 
 
@@ -404,6 +404,10 @@ body {
 
 @media (max-width:800px) {
 
+    #about {
+        margin: 2rem 2rem 2rem 2rem;
+    }
+
     .imgAbout {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -432,6 +436,23 @@ body {
 
 
 /* Contact Section */
+
+#contact {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
 
 
 /* Footer Section */
