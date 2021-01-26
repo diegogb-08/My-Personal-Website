@@ -292,8 +292,8 @@ body {
     text-decoration: none;
     color: black;
 }
+
 .card {
-    
     border: none;
     outline: none;
     text-align: center;
@@ -320,6 +320,15 @@ body {
     font-size: 30px;
     border-radius: 50%;
     display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle span {
+    display: flex;
+    margin-top: 0.50rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .card:hover .circle {
@@ -443,13 +452,43 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    width: 100%;
 }
 
 .contactContainer {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+}
+
+
+
+.contactSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.circle:hover {
+    background-color:rgb(204, 84, 52);
+    color: white;
+    transition: 0.5s;
+}
+
+/* Contact Media Query */
+
+@media (max-width: 800px) {
+
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
