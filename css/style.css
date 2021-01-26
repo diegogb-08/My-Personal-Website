@@ -20,7 +20,7 @@ body {
     background-color: rgb(248,249,250);
     color: grey;
     font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 0px 7px 49px -34px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 26px -16px rgba(0,0,0,0.75);
 }
 
 .brand-title {
@@ -124,7 +124,8 @@ body {
 
 
 .mainSection {
-    margin-top: 10em;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
     max-width: 100%;
     height: auto;
     display: flex;
@@ -144,25 +145,28 @@ body {
 
 #mainPicture {
     max-width: 40%;
-    margin: 0 0 0 3em;
+    margin-left: 3em;
     padding: 0;
     box-shadow: 10px 10px 46px -16px rgba(0,0,0,0.75);
 }
 
 .myPresentation {
     width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.main h6 {
+.myPresentation h2 {
+    font-weight: lighter;
+}
+
+.myPresentation h6 {
     font-size: 1em;
     line-height: 1;
     border-bottom: 3px solid rgb(204, 84, 52);
-    width: 50%;
+    width: 45%;
 }
 
 .buttons {
@@ -185,12 +189,12 @@ body {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-#work {
+#projects {
     background-color: rgb(204, 84, 52);
     color: white;
 }
 
-#work:hover {
+#projects:hover {
     background-color: rgb(212, 107, 78);
     border: rgb(212, 107, 78);
     color: white;
@@ -243,33 +247,56 @@ body {
     }
 
     #mainPicture {
-        max-width: 60%;
+        max-width: 50%;
         margin: 0;
     }
 
-    .myWork h1 {
-        text-align: center;
-        margin-top: 1em;
-    }
-    
-    .footer .inner_footer{
-        width: 90%;
+    .myPresentation h6 {
+        width: 50%;
     }
 }
 
 /* My Work Section */
 
-.myWork h1 {
+
+#work {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
     text-align: center;
     margin: 2em 0 2em 0;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2em;
+    justify-content: space-between;
+}
+
+.cardLink {
+    text-decoration: none;
+    color: black;
+}
 .card {
+    
     border: none;
     outline: none;
     text-align: center;
     border-radius: 2em;
     box-shadow: 10px 3px 35px -9px rgba(0,0,0,0.75);
+    padding: 1rem;
 }
 
 .card h4 {
@@ -290,7 +317,6 @@ body {
     font-size: 30px;
     border-radius: 50%;
     display: inline-block;
-    margin-bottom: 20px;
 }
 
 .card:hover .circle {
@@ -298,6 +324,19 @@ body {
     color: white;
     transition: 0.5s;
 }
+
+
+/* Work Media Query */
+
+@media (max-width:800px) {
+
+    .myWork h1 {
+        text-align: center;
+        margin-top: 1em;
+    }
+    
+}
+
 
 
 /* About Section */
@@ -392,6 +431,11 @@ body {
 
 
 @media (max-width:800px) {
+
+    .footer .inner_footer{
+        width: 90%;
+    }
+
     .inner_footer .logo_container,
     .inner_footer .footer_third{
         width: 100%;
