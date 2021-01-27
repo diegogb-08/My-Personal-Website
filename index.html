@@ -168,7 +168,40 @@
 
     <section id="contact">
         <div class="contactContainer">
-            <h1>Contact Me</h1>
+            <h1 class="pcVersion">LET´S TALK. BUT YOU FIRST</h1>
+            <h1 class="mobileVersion">LET´S TALK</h1>
+        </div>
+        <div class="contactContainer form" >
+            <form id="contactInputs" action="contactInputs">
+                <div class="firstSection">
+                    <div class="fullName">
+                        <label class="text" for="firstName"> First Name</label>
+                        <input class="boxes" type="text" id="firstName" name="firstName" placeholder="Your name">
+                    </div>
+                    <div class="fullName">
+                        <label class="text" for="lastName">Last name</label>
+                        <input class="boxes" type="text" id="lastName" name="lastName" placeholder="Your last Name">
+                    </div>
+                </div>
+                <div class="secondSection">
+                    <div class="contactDetails">
+                        <label class="text" for="email">Email Address</label>
+                        <input class="boxes" type="email" id="email" name="email" placeholder="example@example.com">
+                    </div>
+                    <div class="contactDetails">
+                        <label class="text" for="telephone">Telephone Number</label>
+                        <input class="boxes" type="number" id="telephone" name="number" placeholder="666 555 444">
+                    </div>
+                </div>
+                <div class="thirdection">
+                    <label class="text" for="subject">Subject</label>
+                    <textarea type="textarea" id="subject" name="text" placeholder="Write something..."></textarea>
+                </div>
+                <div class="sumbitDiv">
+                    <button class="submitButton" type="submit" value="Sumbit">Sumbit</button>
+                </div>
+            </form>
+            <h3>Otherwise, please feel free to contact me at:</h3>
         </div>
 
         <div class="contactContainer">
