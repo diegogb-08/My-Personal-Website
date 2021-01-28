@@ -141,8 +141,9 @@
 }
 
 #mainPicture {
-    max-width: 40%;
+    max-width: 45%;
     margin-left: 3em;
+    border-radius: 2rem;
     padding: 0;
     box-shadow: 10px 10px 46px -16px rgba(0,0,0,0.75);
 }
